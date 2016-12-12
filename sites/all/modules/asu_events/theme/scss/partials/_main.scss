@@ -1,5 +1,6 @@
 .asu-news-full-block {
     min-height: 440px;
+
     .asu-block {
         &-left {
             margin-bottom: 20px;
@@ -109,7 +110,9 @@
                 h3 {
                     margin-top: 0;
                     line-height: 1.4;
+
                     @include fontSize(18px);
+
                     margin: 0;
 
                     a {
@@ -143,6 +146,7 @@
 
 span[property*="dc:date"] {
     @include fontSize(15px);
+
     font-weight: 500;
 }
 
@@ -171,6 +175,7 @@ span[property*="dc:date"] {
                 width: 358px;
             }
         }
+
 
         .front & {
             margin: 0 auto;
@@ -235,7 +240,9 @@ span[property*="dc:date"] {
 
             position: relative;
             color: white;
+
             @include fontSize(60px);
+
             &:hover {
                 color: #8C1D40;
             }
@@ -374,6 +381,7 @@ img.panopoly-image-full {
     i {
         padding-left: 4px;
         color: #8C1D40;
+
         @include fontSize(10px);
     }
 }
@@ -381,7 +389,9 @@ img.panopoly-image-full {
 .node-type-asu-news {
     [id="page-title"] {
         font-weight: 900;
+
         @include fontSize(60px);
+
         margin-top: 80px;
     }
 }
@@ -418,6 +428,7 @@ img.panopoly-image-full {
     .asu-news {
         &-date-wrapper {
             @include fontSize(15px);
+
             font-weight: 500;
             margin-top: 20px;
             display: inline-block;
@@ -425,6 +436,7 @@ img.panopoly-image-full {
 
         &-sub-title {
             @include fontSize(23px);
+
             font-weight: 500;
             margin-bottom: 20px;
         }
@@ -449,7 +461,9 @@ img.panopoly-image-full {
 
         .field-item {
             font-weight: 400;
+
             @include fontSize(13px);
+
             display: inline;
         }
     }
@@ -469,6 +483,7 @@ img.panopoly-image-full {
 
             a {
                 @include fontSize(16px);
+
                 font-weight: 500;
                 border: none;
             }
@@ -476,3 +491,6 @@ img.panopoly-image-full {
     }
 }
 
+.page-events .pane-content article.featured > .featured-right {
+    display: block;
+}

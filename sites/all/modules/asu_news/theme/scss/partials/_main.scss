@@ -330,6 +330,10 @@ p {
             > div {
                 display: flex;
 
+                body.page-news & {
+                    display: block;
+                }
+
                 > div {
                     flex: 1 0 0;
                 }
