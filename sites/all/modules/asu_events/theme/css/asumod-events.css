@@ -60,7 +60,6 @@
         @media (min-width: 1200px) {
           .asu-news-full-block .asu-block-left .featured-right .featured-saf {
             -ms-flex-align: center;
-                -ms-grid-row-align: center;
                 align-items: center;
             padding-left: 14px;
             position: absolute;

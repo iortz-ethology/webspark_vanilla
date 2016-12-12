@@ -268,184 +268,182 @@ span[property*="dc:date"] {
     }
 }
 
-.page-news {
-    p {
-        @include fontSize(16px);
+p {
+    @include fontSize(16px);
 
-        width: 100%;
-    }
+    width: 100%;
+}
 
-    .section .pane-bundle-image {
-        > h2.pane-title {
-            @extend %bold;
+.section .pane-bundle-image {
+    > h2.pane-title {
+        @extend %bold;
 
-            position: relative;
-            color: white;
+        position: relative;
+        color: white;
 
-            @include fontSize(60px);
+        @include fontSize(60px);
 
-            @include respond-to-min(medium) {
-                top: 25px;
-            }
-
-
-            @include respond-to-min(large) {
-                top: 40px;
-            }
-
-
-            @include respond-to-min(xlarge) {
-                top: 80px;
-            }
+        @include respond-to-min(medium) {
+            top: 25px;
         }
 
-        .pane-content {
-            margin-top: -85px;
-            max-width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
 
-    .pane-asu-news-asu-news-listing {
-        margin-top: 100px;
+        @include respond-to-min(large) {
+            top: 40px;
+        }
+
+
+        @include respond-to-min(xlarge) {
+            top: 80px;
+        }
     }
 
     .pane-content {
-        article {
-            border-bottom: 1px solid $white-two;
-            margin-top: 30px;
+        margin-top: -85px;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
-            @at-root .page-asu-news-listing .asu-news-highlighted-block article {
-                border: none;
-                margin-top: 0;
+.pane-asu-news-asu-news-listing {
+    margin-top: 100px;
+}
+
+.pane-content {
+    article {
+        border-bottom: 1px solid $white-two;
+        margin-top: 30px;
+
+        @at-root .page-asu-news-listing .asu-news-highlighted-block article {
+            border: none;
+            margin-top: 0;
+        }
+
+        &:first-child {
+            margin-top: 40px;
+        }
+
+        &.featured {
+            display: block;
+
+            > div {
+                display: flex;
+
+                > div {
+                    flex: 1 0 0;
+                }
+
+                .content {
+                    margin-right: 27px;
+
+                    > a {
+                        border: none;
+                    }
+
+                    img {
+                        width: 552px;
+                        height: 311px;
+                        object-fit: contain;
+                    }
+                }
             }
+        }
 
-            &:first-child {
-                margin-top: 40px;
-            }
+        @include respond-to-max(small) {
+            padding-bottom: 25px;
+        }
 
-            &.featured {
+
+        @include respond-to-min(medium) {
+            display: flex;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            padding-top: 0;
+
+            @at-root .page-asu-news-listing .pane-content .featured {
                 display: block;
+
+                h3 {
+                    @include fontSize(36px);
+                }
 
                 > div {
                     display: flex;
 
-                    > div {
-                        flex: 1 0 0;
-                    }
-
                     .content {
-                        margin-right: 27px;
-
-                        > a {
-                            border: none;
-                        }
-
-                        img {
-                            width: 552px;
-                            height: 311px;
-                            object-fit: contain;
-                        }
+                        flex-shrink: 0;
+                        margin-right: 28px;
                     }
                 }
             }
+
+            @at-root .page-asu-news-listing .pane-content .asu-news-highlighted-block article {
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+
+        > .content {
+            margin-right: 28px;
+            padding-bottom: 30px;
+            flex-shrink: 0;
 
             @include respond-to-max(small) {
-                padding-bottom: 25px;
+                margin-right: 0;
             }
 
 
-            @include respond-to-min(medium) {
-                display: flex;
-                padding-bottom: 40px;
-                margin-bottom: 40px;
-                padding-top: 0;
+            > a {
+                border: none;
+            }
 
-                @at-root .page-asu-news-listing .pane-content .featured {
-                    display: block;
+            @at-root .page-asu-news-listing .asu-news-listing-wrapper article > .content {
+                flex-shrink: 1;
+            }
+        }
 
-                    h3 {
-                        @include fontSize(36px);
-                    }
+        img {
+            width: 260px;
+            height: 146px;
+            object-fit: cover;
 
-                    > div {
-                        display: flex;
-
-                        .content {
-                            flex-shrink: 0;
-                            margin-right: 28px;
-                        }
-                    }
-                }
-
-                @at-root .page-asu-news-listing .pane-content .asu-news-highlighted-block article {
-                    flex-wrap: wrap;
-                    padding-bottom: 20px;
-                    margin-bottom: 0;
+            @at-root .page-asu-news-listing .pane-content .featured img {
+                @include respond-to-min(medium) {
+                    width: 552px;
+                    height: 311px;
+                    object-fit: cover;
                 }
             }
 
+            @include respond-to-max(large) {
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
 
-            > .content {
-                margin-right: 28px;
-                padding-bottom: 30px;
-                flex-shrink: 0;
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
 
-                @include respond-to-max(small) {
-                    margin-right: 0;
-                }
-
-
-                > a {
-                    border: none;
-                }
-
-                @at-root .page-asu-news-listing .asu-news-listing-wrapper article > .content {
-                    flex-shrink: 1;
-                }
+            @at-root .page-asu-news-listing .pane-content .asu-news-highlighted-block article h3 {
+                margin-top: 10px;
+                margin-bottom: 4px;
             }
 
-            img {
-                width: 260px;
-                height: 146px;
-                object-fit: cover;
+            a {
+                color: black;
+                border: none;
 
-                @at-root .page-asu-news-listing .pane-content .featured img {
-                    @include respond-to-min(medium) {
-                        width: 552px;
-                        height: 311px;
-                        object-fit: cover;
-                    }
+                @at-root .pane-content article.featured h3 a {
+                    @include fontSize(36px);
                 }
 
-                @include respond-to-max(large) {
-                    display: block;
-                    margin: 0 auto 10px;
-                }
-            }
-
-            h3 {
-                margin-top: 0;
-                margin-bottom: 10px;
-
-                @at-root .page-asu-news-listing .pane-content .asu-news-highlighted-block article h3 {
-                    margin-top: 10px;
-                    margin-bottom: 4px;
-                }
-
-                a {
-                    color: black;
-                    border: none;
-
-                    @at-root .page-news .pane-content article.featured h3 a {
-                        @include fontSize(36px);
-                    }
-
-                    &:hover {
-                        color: #8C1D40;
-                        border-bottom: 1px dotted #8C1D40;
-                    }
+                &:hover {
+                    color: #8C1D40;
+                    border-bottom: 1px dotted #8C1D40;
                 }
             }
         }
@@ -567,6 +565,7 @@ img.panopoly-image-full {
 
     .caption {
         position: relative;
+
         &.caption-left {
             @include respond-to-min(small) {
                 margin: 0 50px 20px 0;
@@ -711,7 +710,7 @@ img.panopoly-image-full {
     }
 }
 
-.page-news .pane-content article.news-list-page-compact-teaser > .content {
+.pane-content article.news-list-page-compact-teaser > .content {
     flex-shrink: 1;
 }
 
