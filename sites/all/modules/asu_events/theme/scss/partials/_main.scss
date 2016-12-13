@@ -83,7 +83,7 @@
             @include respond-to-min(large) {
                 display: flex;
                 flex-direction: column;
-                height: 367px;
+                height: auto;
             }
 
 

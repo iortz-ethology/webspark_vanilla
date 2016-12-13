@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'vanilla_drupal_drupal_web',
-      'username' => 'drupaluser',
-      'password' => 'vanilla_drupal',
+      'database' => 'webspark',
+      'username' => 'root',
+      'password' => 'root',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
